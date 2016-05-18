@@ -21,7 +21,7 @@ var sass = require("gulp-sass");
 var autoprefixer = require("gulp-autoprefixer");
 
 gulp.task("sass", function() {
-    gulp.src("src/sass/**/*scss")
+    gulp.src("src/sass/**/*.scss")
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer())

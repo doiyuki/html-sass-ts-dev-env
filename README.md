@@ -11,7 +11,11 @@ $ npm install
 $ gulp  
   
 (Optional)  
-$mkdir ./src/sass
+$ mkdir ./src/sass  
+
+# Usage
+Write TypeScript in src/ts, and SASS src/sass.  
+These will be built automatically after $ gulp.  
 
 # Author
 Yuki Doi http://toach.click/
