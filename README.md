@@ -10,7 +10,7 @@ $ cd html-sass-ts-dev-env
 $ npm install  
 $ gulp  
   
-(Optional)
+(Optional)  
 $mkdir ./src/sass
 
 # Author
