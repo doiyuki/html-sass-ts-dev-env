@@ -57,10 +57,20 @@ gulp.task("webpack", function() {
 });
 
 // ------------
+// typings
+// ------------
+var gulpTypings = require("gulp-typings");
+
+gulp.task("typings", function() {
+    return gulp.src("./src/typings.json")
+               .pipe(gulpTypings());        
+});
+
+// ------------
 // default
 // ------------
-gulp.task("default", ["server"], function() {
-    gulp.watch("src/ts/**/*.ts", ["webpack"]),
+gulp.task("default", ["server", "typings"], function() {
+    gulp.watch("src/ts/**/*.ts", ["webpack"]);
     gulp.watch(["dst/js/**/*.js", "!dst/js/min/**/*.js"], ["js"]);
     gulp.watch("src/sass/**/*.scss", ["sass"]);
 })
