@@ -4,7 +4,7 @@ module.exports = {
         app :'./src/ts/app.ts'
     },
     output: {
-        path: './dst/js/',
+        path: require("path").resolve("./dst/js/"),
         filename: '[name].bundle.js'
     },
     resolve: {

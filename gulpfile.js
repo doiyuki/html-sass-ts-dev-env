@@ -69,7 +69,7 @@ gulp.task("typings", function() {
 // ------------
 // default
 // ------------
-gulp.task("default", ["server", "typings"], function() {
+gulp.task("default", ["server", "typings", "webpack", "js", "sass"], function() {
     gulp.watch("src/ts/**/*.ts", ["webpack"]);
     gulp.watch(["dst/js/**/*.js", "!dst/js/min/**/*.js"], ["js"]);
     gulp.watch("src/sass/**/*.scss", ["sass"]);
